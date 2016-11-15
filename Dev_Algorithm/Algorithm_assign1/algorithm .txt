@@ -1,0 +1,48 @@
+Case 1:If Array is not in sorted order:>
+
+Step 1:Take Input array A[] coantaining n elements.
+Step 2:Take another number x.
+Step 3:Initialize indices i and j to zeros also count to zero.
+Step 4: 
+        for (i=0;i<n;i++)
+        if(A[i]<x)
+        for(j=i;j<n;j++)
+        if((A[i]+A[j])==x)
+        print(A[i],A[j])
+        count++;
+        return -1; (time complexity n^2-n)
+    or
+       
+Step 4:Perform Merge sort.Now the given array is sorted. 
+Step 5:Initialise two pointers(l and r) pointing to start and end of the array,then
+        for(i=0;i<n;i++)
+         {
+           if(A[l]+A[r]==x)
+             print(A[l],A[r]);
+             r--,l++;
+           else if(A[r]+A[l]>x)
+                 l++;
+           else 
+                r--;                
+          end
+Step 6:Time Complexity O(nlogn) for Merge sort.
+
+****************************************************************************************************************************
+
+Case 2:If array is sorted one:>
+
+
+Step 1:Take Input array A[] coantaining n elements.
+Step 2:Take another number x. 
+Step 3:Initialise two pointers(l and r) pointing to start and end of the array,then
+        for(i=0;i<n;i++)
+         {
+           if(A[l]+A[r]==x)
+             print(A[l],A[r]);
+             r--,l++;
+           else if(A[r]+A[l]>x)
+                 l++;
+           else 
+                r--;                
+          end
+Step 4:Time Complexity O(n).
