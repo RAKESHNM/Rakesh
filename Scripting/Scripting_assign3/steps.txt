@@ -1,0 +1,12 @@
+Task 1.
+Step 1.Created  a new user razorthink and then deleted password using "sudo delete passwd <username>".
+Step 2.Assigning sudo access privileges to specified commands using " root ALL=(ALL:ALL) ALL" and "razorthink   ALL=(ALL) NOPASSWD commands".
+ 
+Task 2.
+Step 1.Installed tiger tool "sudo apt-get install tiger".
+Step 2.Copying security auditing report in one text file "sudo tiger > /path/to/file".
+Step 3.Mailing report and running it by cron job.
+
+Task 3.
+Step 1.Installed Lynis tool "sudo apt-get lynis".
+Step 2.Generated report,warnings and suggestions using appropriate command.

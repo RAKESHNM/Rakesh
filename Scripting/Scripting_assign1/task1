@@ -1,0 +1,6 @@
+#1/bin/bash/
+#creating a timestamp folder
+x=$(date +%T_%a_%f_%Z)
+mkdir $x
+gedit /tmp/test.txt
+mv /tmp/test.txt $x

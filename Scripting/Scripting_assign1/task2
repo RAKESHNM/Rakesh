@@ -1,0 +1,12 @@
+#!/bin/bash/
+FILE="$1"
+PATH="$2"
+cd $2
+export PATH=$PATH:/bin:/usr/local/bin
+if [ -f "$FILE" ];
+then
+rm -rf $FILE 
+else
+tar czf new.tar $2
+fi
+

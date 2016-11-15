@@ -1,0 +1,11 @@
+Task 1
+Step 1:Created a folder with timestamp as a (20101028173534).
+Step 2:Checking wheather the directory is present or not [ -d $DIR ].
+Step 3.If present then copying it to newly created folder using cp command.
+Step 4.If directory is not present then archiving the backup.txt file.(ref images files_copied).
+
+Task 2
+Step 1:Accepted path and file name as a command line argument.
+Step 2.Listed all the files in that directory and underneath,then sorted files according to their size.
+Step 3.Removed zero byte files if any asking the user wheather to remove it or not.
+Step 4.Renamed the file if it is present in the current working directory.(reg images code_run).

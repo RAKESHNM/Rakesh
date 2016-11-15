@@ -1,0 +1,11 @@
+#!/bin/bash
+FILE=$1
+x=$(date +%Y%m%d%H%M%S) #creating timestamp file
+mkdir $x   #creating folder
+sudo chmod 777 $x
+while IFS= read -r line #reading paths line by line in backup.txt
+do
+ [ -d $line ] && cp -rp $line $x #checking wheather directory is present,if it is then copying entire folder into newly created folder
+
+done < "$FILE"
+tar cvfz /home/rakesh/backup.txt #creating tar for backup.txt

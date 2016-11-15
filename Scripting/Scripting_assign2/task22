@@ -1,0 +1,24 @@
+#!/bin/bash
+DIR=$1 #taking path as a command line argument
+NAME=$2   #taking file name as a command line argument
+export PATH=$PATH:/bin:/usr/local/bin 
+cd $1
+ls -RlSr>/home/rakesh/file.txt #listing all files in folder and underneath
+find . -type f -exec ls -lSd {} +>/home/rakesh/sorting_files.txt #sorting files according to thier size
+awk '{ print $5,$9 }' /home/rakesh/sorting_files.txt>/home/rakesh/sort.txt
+#ls -lS /home/rakesh/file.txt
+#awk '{print $9}' /home/rakesh/file.txt>only_names.txt
+awk -F' ' '{ if($5==0) {print $9} }' /home/rakesh/file.txt>/home/rakesh/empty.txt
+echo "empty file"
+awk '{print $1}' /home/rakesh/empty.txt
+#awk '{ print $5,$9 }' /home/rakesh/file.txt>/home/rakesh/f.txt
+PATH=$PATH:/home/user/bin
+#find $DIR -size 0 -print>/home/rakesh/files.txt
+
+find /home/rakesh/etc -type f -size 0 -exec rm -i {} \; #removing zero byte files
+
+mv $NAME Razorthink #renaming the given file as a 
+
+
+
+

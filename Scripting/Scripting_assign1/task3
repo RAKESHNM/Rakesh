@@ -1,0 +1,4 @@
+#!/bin/bash/
+#copying precess ID's into a file
+ps -ef>PID
+awk '{print $2}' PID>PID1

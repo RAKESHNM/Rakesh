@@ -1,0 +1,14 @@
+Task 1
+Step 1:Created a folder with timestamp as a folder name  (x=$(date +%T_%a_%F_%Z)).
+Step 2:Moved test file from tmp to newly created folder timestamp.(ref images task1_shellscript).
+
+Task 2
+Step 1:Accepted file name and path as a command line argument and then checked weather the given file is present or not using if else condition(if ' [$ FILE]' ).
+Step 2:If file is present then removed it using rm command (rm -rf <file name>).
+Step 3 :If file is not present then archived given directory (tar czf new.tar <PATH>).(ref images task2_shellscript,archived_file)
+ 
+
+Task 3
+Step 1:We can get the list of currently running processes using command "ps -ef".
+Step 2:Copied list of currently running processes in one file (ps -ef>PID).
+Step 3:Using awk command copied only PID's in another file (awk '{print $2}'>PID1).(ref images task3_shellscript,process_ids)
