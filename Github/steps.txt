@@ -1,0 +1,17 @@
+Task 1
+Step 1.Already had a branch2 and merged it with the master and there were not any conflicts found.(ref image:task1)
+
+Task 2
+Step 1.In branh3 we have "Scene 3 good commit" committed on few days before and we just copied the commit id which is needed to revert back.
+Step 2.Reverted back using the command "git checkout <commit id> <file name>"
+Step 3.Tried it in another way by creating a new branch from that commit and deleting old branch (ref images:task2,task21,task22)
+
+Task 3
+Step 1.Created a new branch 'branch4' using command "git checkout -b <branch name>" (ref image:task3)
+
+Task 4
+Step 1.Created a new file in branch4 'bad.txt' and commited it locally by using commands git add  and stashed it with git stash command
+Step 2.Added few git ignore files in badfile.txt.
+
+Task 5
+Step 1.Reverted bad file (ref images:task5,task51)
